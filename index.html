@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <script src="common.js" defer></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <title>Document</title>
+    </head>
+    <body>
+        <main>
+            <header>
+                <nav class="con-wrap">
+                    <h1>
+                        <a href="index.html"><span class="highlight">Eeezo</span>BOOKS</a>
+                    </h1>
+                    <div class="input-wrap">
+                        <select name="" id="search-type">
+                            <option value="Keyword">제목+저자 검색</option>
+                            <option value="Title">도서명 검색</option>
+                            <option value="Author">저자명 검색</option>
+                            <option value="Publisher">출판사명 검색</option>
+                        </select>
+                        <input type="text" id="search-input" placeholder="검색어를 입력해주세요" />
+                    </div>
+                    <div class="fav-wrap">
+                        <a href="./result.html?queryType=fav">
+                            <div class="fav-btn fav-black fav-top"></div>
+                            <div>찜 목록</div>
+                        </a>
+                    </div>
+                </nav>
+            </header>
+            <section class="sec1">
+                <div class="con-wrap">
+                    <h2>베스트 셀러</h2>
+                    <div class="slide-wrap">
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="slide-left">
+                            <div class="swiper swiper-left">
+                                <div class="swiper-wrapper"></div>
+                            </div>
+                        </div>
+                        <div class="slide-right">
+                            <div class="swiper swiper-right">
+                                <div class="swiper-wrapper"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="sec2">
+                <div class="con-wrap">
+                    <div class="top">
+                        <h2>이번 달 새로 나온 도서</h2>
+                        <p><a href="./result.html?queryType=ItemNewAll">더보기</a></p>
+                    </div>
+                    <div class="banner"></div>
+                </div>
+            </section>
+            <section class="sec3">
+                <div class="con-wrap">
+                    <div class="left">
+                        <h3><span class="highlight">Eeezo</span>BOOKS<span class="highlight">Picks</span></h3>
+                        <span>주목할만한 신간을 추천해드려요!</span>
+                        <a href="./result.html?queryType=ItemNewSpecial">더 많은 신간 도서 보러가기</a>
+                    </div>
+                    <div class="banner"></div>
+                </div>
+            </section>
+            <section class="sec4">
+                <div class="con-wrap">
+                    <div class="top">
+                        <h2>블로거 베스트 셀러</h2>
+                        <p><a href="./result.html?queryType=BlogBest">더보기</a></p>
+                    </div>
+                    <div class="banner"></div>
+                </div>
+            </section>
+        </main>
+        <div class="modal-wrap">
+            <div class="modal">
+                <div class="left">
+                    <div class="img-wrap"><img src="" alt="" /></div>
+                    <button class="fav-btn fav-black"></button>
+                </div>
+                <div class="right">
+                    <div>
+                        <h3 class="title"></h3>
+                        <div class="author"></div>
+                        <div class="date"></div>
+                        <div class="price-wrap">
+                            <span class="discount"></span>
+                            <span class="price"></span>
+                        </div>
+                        <div class="review"></div>
+                        <div class="description"></div>
+                    </div>
+                    <div class="link"><a href="">알라딘으로 이동 →</a></div>
+                </div>
+                <button class="modal-close-btn"></button>
+            </div>
+        </div>
+    </body>
+</html>
